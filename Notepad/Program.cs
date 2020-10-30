@@ -14,14 +14,12 @@ namespace Notepad
     {
         static void Main()
         {
-            var tmp = new StackMemoryDumpReader();
-
             Console.CancelKeyPress += myHandler;
             while (true)
             {
                 Console.WriteLine("CTRL+C to interrupt the read operation:");
 
-                tmp.ParseLine(Console.ReadLine());
+                Console.ReadLine();
             }
         }
 
